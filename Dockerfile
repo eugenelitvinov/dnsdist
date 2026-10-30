@@ -2,7 +2,7 @@ FROM alpine:edge
 
 EXPOSE 53/udp 5199 8083
 
-VOLUME [ "/etc/dnsdist.conf.d" ] 
+VOLUME [ "/etc/dnsdist.conf.d" ]
 
 RUN apk add --no-cache tzdata openssl dnsdist ca-certificates dumb-init && \
     mkdir /etc/dnsdist.conf.d && \
